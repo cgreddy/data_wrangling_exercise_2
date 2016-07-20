@@ -16,4 +16,7 @@ titanic_original$boat[titanic_original$boat == ""] <- NA
 
 titanic_original$has_cabin_number <- ifelse(titanic_original$cabin =="", 0, 1)
 
+#export
+write.csv(titanic_original,file = "titanic_clean.csv")
+
   
